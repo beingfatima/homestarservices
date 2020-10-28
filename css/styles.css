@@ -1,0 +1,226 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: "fira-sans", "San Francisco", "Segoe UI", sans-serif;
+    background-color: rgba(44, 43, 43, 0.863);
+    overflow-x: hidden;
+    margin: 0 auto;
+
+}
+.navform{
+  background: url(../images/background.png) no-repeat;
+  color: white;
+
+}
+
+#bar ul, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+#bar ul, li {
+    float: left;
+  }
+  
+#bar ul,  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+#bar ul,  li a:hover{
+  background-color: rgb(88, 88, 88, 0.8);
+}
+
+.right{
+  float: right;
+}
+
+.heading{
+  text-align: center;
+  color: white;
+  font-size: 64px;
+}
+
+
+.footer{
+  color: white;
+  background:  rgba(44, 43, 43, 0.863) no-repeat;  
+  border-style: solid;
+  border-color: rgba(44, 43, 43, 1);
+  padding-left: 6%;
+
+}
+
+
+.footertable {
+  border-collapse: collapse;
+  text-align: center;
+
+
+}
+
+.footertable a{
+  text-decoration: none;
+  color: inherit;
+
+}
+
+
+.footertable a:hover{
+  text-decoration: underline;
+  color: inherit;
+
+}
+
+/* sign up form */
+
+#signupform{
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email], input[type=password], textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  color: black;
+  box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+input, .signupsubmit{
+  background-color: #00a6f3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  box-sizing: border-box;
+
+}
+
+.signupsubmit:hover{
+  opacity:1;
+}
+
+
+.loginlink, .forgotpasswordlink{
+  text-decoration: none;
+  color: inherit;
+  color: #00a6f3;
+  font-weight: bold;
+  
+}
+
+.forgotpasswordlink:hover{
+  text-decoration: underline;
+  color: inherit;
+  color: #00a6f3;
+  font-weight: bold;
+  
+}
+
+.midheading{
+  text-align: center;
+}
+
+.titleTable{
+  font-weight: bold;
+}
+
+.browseTable, .browseT{
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  text-align: center;
+  
+}
+
+.browseTable td{
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #00a6f3;
+}
+
+.browseTable td:hover{
+  color: #3382a7;
+  cursor: pointer;
+}
+
+.browseTable .titleTable{
+  color:white;
+}
+
+.browseTable .titleTable:hover{
+  color:white;
+  cursor: default;
+}
+
+#quoteForm{
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.newsletter{
+  text-align: center;
+  
+}
+
+footer table{
+  width: 100%;
+}
+
+.validation img{
+    width: 50%;
+    height:400px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.validation{
+  text-align: center;
+}
+
+.valid{
+  color: white;
+  background: url(../images/background.png) no-repeat;
+  background-size: cover;
+}
+
+.readme{
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 2%;
+  background-color: white;
+  color: black;
+}
+
+.readme .read{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 2%;
+  list-style-type: square;
+  background-color: white;
+  color: black;
+}
