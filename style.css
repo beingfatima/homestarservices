@@ -1,0 +1,151 @@
+body {
+  margin: 30px;
+  font-family: "Georgia", serif;
+  line-height: 1.8em;
+  color: #333;
+  background-color: #DBBCFF;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#content {
+  margin: 80px 70px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.wideBox {
+  clear: both;
+  text-align: center;
+  margin: 70px;
+  padding: 10px;
+  background: #ebedf2;
+  border: 1px solid #333;
+}
+
+.wideBox h1 {
+  font-weight: bold;
+  margin: 20px;
+  color: #666;
+  font-size: 1.5em;
+}
+
+#cardSlots {
+  margin: 50px auto 0 auto;
+  background: #00539CFF;
+}
+
+#cardPile {
+  margin: 0 auto;
+  background: #5F4B8BFF;
+}
+
+#cardSlots, #cardPile {
+  width: 910px;
+  height: 120px;
+  padding: 20px;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+}
+
+#cardSlots div, #cardPile div {
+  float: left;
+  width: 70px;
+  height: 78px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 0 0 10px;
+  background: #EEA47FFF;
+}
+
+#cardSlots div:first-child, #cardPile div:first-child {
+  margin-left: 0;
+}
+
+#cardSlots div.hovered {
+  background: #aaa;
+}
+
+#cardSlots div {
+  border-style: solid;
+}
+
+#cardPile div {
+  background: #E69A8DFF;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0 0 3px #000;
+}
+
+#cardPile div.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+#card1.correct { background: #42EADDFF; }
+#card2.correct { background: #CDB599FF; }
+#card3.correct { background: #00A4CCFF; }
+#card4.correct { background: #ADEFD1FF; }
+#card5.correct { background: #D6ED17FF; }
+#card6.correct { background: #D85A7FFF; }
+#card7.correct { background: #97BC62FF; }
+#card8.correct { background: #CDB599FF; }
+#card9.correct { background: #D198C5FF; }
+#card10.correct { background: #ED2B33FF; }
+
+#winningText {
+  position: absolute;
+  left: 580px;
+  top: 250px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  background: #6FFFFE;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}
+
+#losingText {
+  position: absolute;
+  left: 580px;
+  top: 250px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  background: #6FFFFE;
+  border: 2px solid #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  padding: 20px;
+}
+
+#timer{
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
