@@ -49,16 +49,16 @@ function init() {
   } );
 
   exactMatches = 0;
-  $('#cardPile').html( '' );
-  $('#cardSlots').html( '' );
+  $('#firstRow').html( '' );
+  $('#secondRow').html( '' );
 
   var digits = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
   digits.sort( function() { return Math.random() - .5 } );
 
   for ( var i=0; i<10; i++ ) {
-    $('<div>' + digits[i] + '</div>').data( 'digits', digits[i] ).attr( 'id', 'card'+digits[i] ).appendTo( '#cardPile' ).draggable( {
+    $('<div>' + digits[i] + '</div>').data( 'digits', digits[i] ).attr( 'id', 'card'+digits[i] ).appendTo( '#firstRow' ).draggable( {
       containment: '#content',
-      stack: '#cardPile div',
+      stack: '#firstRow div',
       cursor: 'move',
       revert: true
     } );
@@ -66,8 +66,8 @@ function init() {
 
   var spelledNumbers = [ 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten' ];
   for ( var i=1; i<=10; i++ ) {
-    $('<div>' + spelledNumbers[i-1] + '</div>').data( 'digits', i ).appendTo( '#cardSlots' ).droppable( {
-      accept: '#cardPile div',
+    $('<div>' + spelledNumbers[i-1] + '</div>').data( 'digits', i ).appendTo( '#secondRow' ).droppable( {
+      accept: '#firstRow div',
       hoverClass: 'hovered',
       drop: handleCardDrop
     } );

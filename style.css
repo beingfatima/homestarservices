@@ -34,17 +34,17 @@ h1, h2, h3, h4 {
   font-size: 1.5em;
 }
 
-#cardSlots {
+#secondRow {
   margin: 50px auto 0 auto;
   background: #00539CFF;
 }
 
-#cardPile {
+#firstRow {
   margin: 0 auto;
   background: #5F4B8BFF;
 }
 
-#cardSlots, #cardPile {
+#secondRow, #firstRow {
   width: 910px;
   height: 120px;
   padding: 20px;
@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
 }
 
-#cardSlots div, #cardPile div {
+#secondRow div, #firstRow div {
   float: left;
   width: 70px;
   height: 78px;
@@ -72,26 +72,26 @@ h1, h2, h3, h4 {
   background: #EEA47FFF;
 }
 
-#cardSlots div:first-child, #cardPile div:first-child {
+#secondRow div:first-child, #firstRow div:first-child {
   margin-left: 0;
 }
 
-#cardSlots div.hovered {
+#secondRow div.hovered {
   background: #aaa;
 }
 
-#cardSlots div {
+#secondRow div {
   border-style: solid;
 }
 
-#cardPile div {
+#firstRow div {
   background: #E69A8DFF;
   color: #fff;
   font-size: 50px;
   text-shadow: 0 0 3px #000;
 }
 
-#cardPile div.ui-draggable-dragging {
+#firstRow div.ui-draggable-dragging {
   -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
